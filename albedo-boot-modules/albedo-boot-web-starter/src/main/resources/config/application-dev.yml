@@ -25,10 +25,10 @@ spring:
         default-domain: ${spring.application.name}
     datasource:
         type: com.zaxxer.hikari.HikariDataSource
-        url: jdbc:mysql://localhost:3306/albedo-old?useUnicode=true&characterEncoding=utf8&useSSL=false
+        url: jdbc:mysql://47.100.7.81:3306/albedo-new?useUnicode=true&characterEncoding=utf8&useSSL=false
         name:
         username: root
-        password: 123456
+        password: Root@1234
         hikari:
             data-source-properties:
                 cachePrepStmts: true
@@ -61,9 +61,9 @@ spring:
         suffix: .ftl
         prefer-file-system-access: false
         template-loader-path: /templates,classpath:/templates,/WEB-INF/views/
-#    redis:
-#       host: localhost
-#       port: 6379
+    redis:
+       host: localhost
+       port: 6379
     web:
         root:
             prefix: albedo-boot-ui/
